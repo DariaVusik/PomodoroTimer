@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+       <div class="background_rect1">
+            <div class="timer_background">
+                <div class="radio-button">
+                    <input type="radio" id="pomodoro" name="regime" value="pomodoro" class="pomodoro_radio">
+                    <label for="pomodoro" class="pomodoro_label">Pomodoro</label><br>
+                    <input type="radio" id="short_break" name="regime" value="short_break" class="short_break_radio">
+                    <label for="short_break" class = "short_break_label">Short break</label><br>
+                    <input type="radio" id="long_break" name="regime" value="long_break" class="long_break_radio">
+                    <label for="long_break" class="long_break_label">Long break</label>
+                </div>
+                <p id="timer", class="timer"></p>
+               <div class="start_button">
+                    <input type="checkbox", id="start_checkbox", name="start_checkbox", class="start_checkbox", value="start" >
+                    <label for="start_checkbox" id="button_text">Start</label>
+               </div>
+            </div>
+       </div>
+       
+    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/PomodoroTimer.js"></script>
+    <script src="js/driver_code.js"></script>
+   
+
+</html>

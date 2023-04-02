@@ -1,0 +1,145 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    font-family: 'Inter';
+}
+
+.background_rect1{
+/* position: absolute; */
+width: 548px; 
+margin: auto;
+margin-top: 2.5%;
+height: 660px;
+
+
+
+background: rgba(255, 210, 135, 0.9);
+border-radius: 25px;
+}
+
+.timer_background{
+position: relative;
+width: 431.96px;
+height: 272.94px;
+margin: auto;
+top: 10%;
+/* left: 424.42px;
+top: 105px; */
+
+background: rgba(255, 255, 255, 0.55);
+border-radius: 12px;
+}
+
+.timer{
+    position: relative;
+    height: 142px;
+    margin: auto;
+    top: 10%;
+    
+   
+     font-style: normal; 
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 121px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #DD7979;
+    
+    
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+  }
+
+  .radio-button label {
+    margin: 15px 13px 0px 0px;
+
+    display: inline-block;
+    background-color: rgba(221, 121, 121, 0.25);
+    width: 80px;
+height: 15px;
+    color: #DD7979;
+    padding: 4px 11px;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+  }      
+  .radio-button input[type="radio"]:checked+label {
+    background-color: #DD7979;
+    color: #fff;
+  }
+  .radio-button {
+
+    position: relative;
+    width: 432px;
+height: 36px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+.start_button{
+  display: flex;
+  /* align-items: center; */
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #DD7979;
+border-radius: 5px;
+/* left: 44.17%;
+right: 44.11%;
+top: 36.9%;
+bottom: 58.77%; */
+width: 150px;
+height: 35px;
+
+
+}
+  .start_button label {
+    position: relative;
+    margin: auto;
+    /* left: 0.24%;
+right: 0%;
+top: 0%;
+bottom: 8.74%; */
+margin-top: 0%;
+
+
+background: rgba(255, 210, 135, 0.9);
+border-radius: 5px;
+/* font-family: 'Inter'; */
+vertical-align: middle;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+height: 30px;
+width: 150px;
+
+
+color: #DD7979;
+  }
+
+
+
+  .start_button input[type="checkbox"]:checked+label {
+    height: 32px;
+    background-color: rgba(255, 210, 135, 0.9);
+  }
