@@ -30,12 +30,12 @@ static LONG_BREAK =  15;
     this.state = st;
     this.is_running = false;
     this.current_time = 0;
-    this.pause_timer();
+   // this.pause_timer();
  }
 
  get_next_state() {
    if (this.state == PomodoroTimer.POMODORO) {
-      if (this.pomodoro_count == max_pomodoro_count) {
+      if (this.pomodoro_count == this.max_pomodoro_count) {
             this.pomodoro_count = 0;
             return PomodoroTimer.LONG_BREAK;
       } else {
