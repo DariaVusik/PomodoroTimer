@@ -38,7 +38,7 @@
       
     if (distance < 0) {
     pause_timer(timer);
-    pt.current_time = 0;
+    pt.current_time = 0;////////////////////////////////////////FIXED PART
       if(pt.state == PomodoroTimer.POMODORO) {
           pt.pomodoro_count++;
       }
@@ -89,7 +89,7 @@
         pt.is_running = false;
       }
       pt.state = PomodoroTimer.POMODORO;
-      pt.current_time = 0;
+      pt.current_time = 0; ///////////////////////////////////////////////
       document.getElementById("timer").innerHTML = pt.state + ":00";
     } 
 
@@ -100,7 +100,7 @@
         pt.is_running = false;
       }
       pt.state = PomodoroTimer.SHORT_BREAK;
-      pt.current_time = 0;
+      pt.current_time = 0;/////////////////////////////////////////////////////////////
       document.getElementById("timer").innerHTML = pt.state + ":00";
     }
 
@@ -112,10 +112,10 @@
         pt.is_running = false;
       }
       pt.state = PomodoroTimer.LONG_BREAK;
-      pt.current_time = 0;
+      pt.current_time = 0;///////////////////////////////////////////////////////////////
       document.getElementById("timer").innerHTML = pt.state + ":00";
     }
-    
+    ////////////////////////////////////////////////////////////////////TASK LIST PART//////////////////////////////////////////////////////////////////////////////////////
     document.querySelector('#push').onclick = function(){
       if(document.querySelector('#newtask input').value.length == 0){
           alert("Kindly Enter Task Name!!!!")
@@ -143,5 +143,5 @@
   }
     
 
-    
+  ////////////////////////////////////////////////////////////////////END OF TASK LIST PART//////////////////////////////////////////////////////
 })();
