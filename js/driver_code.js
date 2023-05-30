@@ -127,9 +127,7 @@
                   <span id="taskname">
                       ${document.querySelector('#newtask input').value}
                   </span>
-                  <button class="delete">
-                      <i class="far fa-trash-alt"></i>
-                  </button>
+                   <input type="image" src="./images/doneicon.png", id="delete", class="delete" />
               </div>
           `;
   
